@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-style:gilroy;
+
+}
+html body{
+  height: 100%;
+  width: 100%;
+}
+.main{
+    background-color:lightblue;
+    height: 100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.box{
+    width:400px;
+    border-radius:1.5rem;
+    background-color:linear-gradient(135deg,#342d66,#4f3621);
+    padding: 40px 20px;
+    color:whitesmoke;
+    text-align:center;
+}
+.inp{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.inp input{
+    padding:16px 20px;
+    border-radius:2rem;
+    outline:none;
+    border:none;
+    width:80%;
+    font-size:18px;
+}
+.inp button{
+    padding:17px 20px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+}
+#country{
+    font-weight:50px;
+    margin-top: 40px;
+}
+#temp{
+    font-size: 50px;
+    font-weight: 600;
+}
+#des{
+    font-size: 17px;
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+}
+.two{
+    padding:30px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:25px;
+}
+.hum img{
+    height:60px;
+}
+.hum{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.hum h1{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left:12px;
+}
+.inner p{
+    font-size: 16px;
+    margin-top: 11px;
+
+}
+#err{
+    font-size: 25px;
+    margin-top: 15px;
+    display:none;
+}
