@@ -19,3 +19,31 @@ document.querySelector(" button").addEventListener("click",()=>{
 })
 
 // checkweather("New Delhi")
+
+document.getElementById("MyButton").addEventListener("click", function () {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const loginBtn = document.getElementById("loginBtn")
+
+    if (username === "" || password === "") {
+        alert("Please enter username and password");
+    } else {
+        alert("Login successful!");
+        
+    }
+});
+
+document.getElementById("MyButton").addEventListener("click", function () {4
+    const name = document.getElementById("name").value;
+    const dob = document.getElementById("dob").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (name === "" || dob === "" || username === "" || password === "") {
+        alert("Please enter name, DOB username and password");
+    } else {
+        alert("SignUp is successful!");
+        // redirect example
+        // window.location.href = "home.html";
+    }
+});
