@@ -1,9 +1,12 @@
 {
-  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/login", "dest": "/login.html" },
+    { "src": "/Login.html", "dest": "/login.html" },
     { "src": "/Login", "dest": "/login.html" },
-    { "src": "/signup", "dest": "/signup.html" }
+    { "src": "/login", "dest": "/login.html" },
+    { "src": "/Signup.html", "dest": "/signup.html" },
+    { "src": "/signup", "dest": "/signup.html" },
+    { "src": "/", "dest": "/index.html" }
   ]
 }
