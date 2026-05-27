@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Weather App</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -24,6 +24,9 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 
 </head>
 
@@ -65,25 +68,65 @@
 
             <div class="inp">
 
-                <input type="text" placeholder="Enter city name">
+                <input type="text" id="cityInput" placeholder="Search city...">
 
                 <button id="searchBtn">
 
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="ti ti-search"></i>
 
                 </button>
 
             </div>
 
-            <!-- Weather -->
+            <!-- Weather Card -->
 
-            <h2 id="country">Hyderabad</h2>
+            <div class="weather-card" id="weatherCard">
 
-            <h1 id="temp">25°C</h1>
+                <div class="city-label">
 
-            <p id="des">Cloudy</p>
+                    Current Conditions
 
-            <!-- Humidity & Wind -->
+                </div>
+
+                <h2 id="country">
+
+                    Hyderabad, IN
+
+                </h2>
+
+                <p class="wx-date" id="wxDate">
+
+                </p>
+
+                <div class="temp-row">
+
+                    <h1 id="temp">
+
+                        25
+
+                    </h1>
+
+                    <span class="temp-unit">
+
+                        °C
+
+                    </span>
+
+                </div>
+
+                <p id="des">
+
+                    Partly cloudy
+
+                </p>
+
+                <i class="ti ti-cloud bg-icon" id="bgIcon">
+
+                </i>
+
+            </div>
+
+            <!-- ================= DETAILS ================= -->
 
             <div class="two">
 
@@ -93,9 +136,13 @@
 
                     <div class="hum">
 
-                        <img src="images/humidity.jpg" alt="Humidity">
+                        <i class="ti ti-droplet"></i>
 
-                        <h1 id="humidity">80%</h1>
+                        <h1 id="humidity">
+
+                            80%
+
+                        </h1>
 
                     </div>
 
@@ -109,9 +156,13 @@
 
                     <div class="hum">
 
-                        <img src="images/wind.jpg" alt="Wind">
+                        <i class="ti ti-wind"></i>
 
-                        <h1 id="wind">15 km/hr</h1>
+                        <h1 id="wind">
+
+                            15 km/h
+
+                        </h1>
 
                     </div>
 
@@ -124,7 +175,11 @@
             <!-- Error -->
 
             <p id="err">
-                Invalid City Name
+
+                <i class="ti ti-alert-circle"></i>
+
+                City not found
+
             </p>
 
         </div>

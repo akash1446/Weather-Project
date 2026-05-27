@@ -7,54 +7,186 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Signup</title>
+    <title>Signup — Weather App</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display&display=swap"
+        rel="stylesheet">
+
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+
+        <a href="index.html" class="logo">
+            Weather App
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Login.html">Login</a>
+            <a href="signup.html" class="active">Signup</a>
+        </nav>
+
+    </div>
+
+    <!-- SIGNUP PAGE -->
+
     <div class="auth-page">
 
-        <div class="auth-box signup-box">
+        <div class="auth-box">
 
-            <h2>Signup</h2>
+            <p class="auth-eyebrow">
+                Create account
+            </p>
 
-            <label for="name">
-                Name
-            </label>
+            <h2>
+                Join Weather App
+            </h2>
 
-            <input type="text" id="name" placeholder="Enter your name">
+            <!-- ALERT -->
 
-            <label for="dob">
-                DOB
-            </label>
+            <div class="alert" id="signupAlert">
 
-            <input type="date" id="dob">
+                <i class="ti ti-alert-circle"></i>
 
-            <label for="username">
-                Username
-            </label>
+                <span id="signupMsg"></span>
 
-            <input type="text" id="username" placeholder="Enter username">
+            </div>
 
-            <label for="password">
-                Password
-            </label>
+            <!-- NAME -->
 
-            <input type="password" id="password" placeholder="Enter password">
+            <div class="field">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <div class="input-wrap">
+
+                    <i class="ti ti-user"></i>
+
+                    <input type="text" id="name" placeholder="Enter your full name">
+
+                </div>
+
+            </div>
+
+            <!-- DOB -->
+
+            <div class="field">
+
+                <label for="dob">
+                    Date of Birth
+                </label>
+
+                <div class="input-wrap">
+
+                    <i class="ti ti-calendar"></i>
+
+                    <input type="date" id="dob">
+
+                </div>
+
+            </div>
+
+            <!-- USERNAME -->
+
+            <div class="field">
+
+                <label for="username">
+                    Username
+                </label>
+
+                <div class="input-wrap">
+
+                    <i class="ti ti-at"></i>
+
+                    <input type="text" id="username" placeholder="Choose username">
+
+                </div>
+
+            </div>
+
+            <!-- PASSWORD -->
+
+            <div class="field">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <div class="input-wrap">
+
+                    <i class="ti ti-lock"></i>
+
+                    <input type="password" id="password" placeholder="Create password">
+
+                    <button class="toggle-pw" id="togglePw" type="button">
+
+                        <i class="ti ti-eye" id="eyeIcon"></i>
+
+                    </button>
+
+                </div>
+
+                <!-- PASSWORD STRENGTH -->
+
+                <div class="strength-bar">
+
+                    <span id="s1"></span>
+                    <span id="s2"></span>
+                    <span id="s3"></span>
+                    <span id="s4"></span>
+
+                </div>
+
+                <p class="strength-label" id="strengthLabel"></p>
+
+            </div>
+
+            <!-- BUTTON -->
 
             <button id="signupBtn">
-                Signup
+
+                <i class="ti ti-user-plus"></i>
+
+                Create Account
+
             </button>
+
+            <!-- DIVIDER -->
+
+            <div class="divider">
+
+                <span>
+                    already have an account?
+                </span>
+
+            </div>
+
+            <!-- LOGIN LINK -->
 
             <p class="auth-link">
 
-                Already existing user?
+                Existing user?
 
                 <a href="Login.html">
-                    Login
+                    Login here
                 </a>
 
             </p>
@@ -63,6 +195,7 @@
 
     </div>
 
+    <!-- External JS -->
     <script src="script.js"></script>
 
 </body>
