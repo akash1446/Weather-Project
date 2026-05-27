@@ -1,189 +1,239 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
-    font-style:gilroy;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
 
-}
-html body{
-  height: 100%;
-  width: 100%;
-}
-.main{
-    background-color:aqua;
-    height: 100vh;
+html,body{
+    height:100%;
     width:100%;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    height:70px;
+    width:100%;
+    background-color:deeppink;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+}
+
+.logo h2{
+    color:white;
+}
+
+.navbar nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+.navbar nav a:hover{
+    text-decoration:underline;
+}
+
+.active{
+    text-decoration:underline;
+}
+
+/* ================= MAIN ================= */
+
+.main{
+    min-height:calc(100vh - 70px);
+
     display:flex;
     justify-content:center;
     align-items:center;
+
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
 }
-.box{
+
+/* ================= WEATHER BOX ================= */
+
+.box-main{
     width:400px;
-    border-radius:1.5rem;
-    background-color:linear-gradient(135deg,#342d66,#4f3621);
-    padding: 40px 20px;
-    color:whitesmoke;
+
+    background:linear-gradient(135deg,#342d66,#4f3621);
+
+    padding:40px 25px;
+
+    border-radius:20px;
+
     text-align:center;
+
+    color:white;
 }
+
+/* ================= INPUT ================= */
+
 .inp{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    }
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+}
+
 .inp input{
-    padding:16px 20px;
-    border-radius:2rem;
-    outline:none;
-    border:none;
     width:80%;
+
+    padding:15px 20px;
+
+    border:none;
+    outline:none;
+
+    border-radius:40px;
+
     font-size:18px;
 }
-.inp button{
-    padding:17px 20px;
-    border-radius: 100%;
-    outline: none;
-    border: none;
-}
-#country{
-    font-weight:50px;
-    margin-top: 40px;
-}
-#temp{
-    font-size: 50px;
-    font-weight: 600;
-}
-#des{
-    font-size: 17px;
-    letter-spacing: 0.9px;
-    text-transform: capitalize;
-}
-.two{
-    padding:30px 30px;
-    display: flex;
-    justify-content: space-between;
-    margin-top:25px;
-}
-.hum img{
-    height:60px;
-}
-.hum{
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-}
-.hum h1{
-    font-weight: 600;
-    font-size: 20px;
-    margin-left:12px;
-}
-.inner p{
-    font-size: 16px;
-    margin-top: 11px;
 
+.inp button{
+    height:55px;
+    width:55px;
+
+    border:none;
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:18px;
 }
+
+/* ================= WEATHER ================= */
+
+#country{
+    margin-top:30px;
+    font-size:35px;
+}
+
+#temp{
+    margin-top:10px;
+    font-size:60px;
+}
+
+#des{
+    margin-top:10px;
+    font-size:18px;
+    text-transform:capitalize;
+}
+
+/* ================= DETAILS ================= */
+
+.two{
+    margin-top:40px;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.hum{
+    display:flex;
+    align-items:center;
+}
+
+.hum img{
+    height:50px;
+    width:50px;
+}
+
+.hum h1{
+    margin-left:10px;
+    font-size:22px;
+}
+
+.inner p{
+    margin-top:10px;
+}
+
 #err{
-    font-size: 25px;
-    margin-top: 15px;
+    margin-top:20px;
+    color:#ffb3b3;
     display:none;
 }
-.navbar{
-  height: 70px;
-  background-color: deeppink;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0, 40px;
-}
-.navbar nav a{
-   color: white;
-   text-decoration: none;
-   margin-left: 25px;
-   font-size: 20px;
-   font-weight: 500;
-}
-.navbar nav a:hover {
-  text-decoration: underline;
-}
-.login-box button {
-  background-color: dodgerblue;
+
+/* ================= AUTH PAGES ================= */
+
+.auth-page{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#667eea,#764ba2);
 }
 
-.signup-box button {
-  background-color: deeppink;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+.auth-box{
+    width:350px;
 
-.auth-page {
-    height: 100vh;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-.auth-box-signup-box {
-    background: #fff;
-    padding: 30px;
-    width: 320px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+.auth-box h2{
+    text-align:center;
+    margin-bottom:25px;
 }
 
-
-.auth-box-signup-box h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.auth-box label{
+    font-weight:600;
 }
 
+.auth-box input{
+    width:100%;
 
-.auth-box-signup-box label {
-    font-size: 14px;
-    font-weight: bold;
+    padding:12px;
+
+    margin:10px 0 18px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
 }
 
+.auth-box button{
+    width:100%;
 
-.auth-box-signup-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#667eea;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
 }
 
-
-.auth-box-signup-box button {
-    width: 100%;
-    padding: 10px;
-    background: #667eea;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
+.auth-box button:hover{
+    transform:scale(1.03);
 }
 
-.auth-box-signup-box button:hover {
-    background: #5a67d8;
+.signup-box button{
+    background:deeppink;
 }
 
-
-.auth-link {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
+.auth-link{
+    margin-top:15px;
+    text-align:center;
 }
 
-.auth-link a {
-    color: #667eea;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.auth-link a:hover {
-    text-decoration: underline;
+.auth-link a{
+    text-decoration:none;
+    font-weight:600;
 }
